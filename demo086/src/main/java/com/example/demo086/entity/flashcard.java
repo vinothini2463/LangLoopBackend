@@ -8,6 +8,7 @@ import jakarta.validation.constraints.*;
 public class flashcard {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "Front content is required")
