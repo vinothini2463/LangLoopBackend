@@ -10,6 +10,7 @@ import jakarta.validation.constraints.*;
 public class metric {
 
     @Id
+     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Positive(message = "Ease factor must be positive")
