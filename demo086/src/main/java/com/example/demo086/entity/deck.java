@@ -8,6 +8,7 @@ import jakarta.validation.constraints.*;
 public class deck {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "Title is required")
