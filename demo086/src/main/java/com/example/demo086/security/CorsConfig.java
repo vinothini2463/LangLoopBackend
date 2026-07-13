@@ -19,7 +19,7 @@ public class CorsConfig {
         config.setAllowedOrigins(List.of(
                 "http://localhost:5500",
                 "http://127.0.0.1:5500",
-            "https://vinothini2463.github.io"
+                "https://vinothini2463.github.io"
         ));
 
         config.setAllowedMethods(List.of(
@@ -32,6 +32,8 @@ public class CorsConfig {
         ));
 
         config.setAllowedHeaders(List.of("*"));
+
+        config.setExposedHeaders(List.of("Authorization"));
 
         config.setAllowCredentials(true);
 
